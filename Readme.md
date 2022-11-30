@@ -1,2 +1,10 @@
-1-This project was developed with MERN.
-2-Styles made using Material-ui.
+# MERN STACK SOCIAL MEDIA APP
+
+This project was developed with MERN.
+
+- Languages ​​and utilities used:
+  - React - Redux
+  - NodeJs - ExpressJs
+  - MaterialUI
+  - Nodemon
+  - MongoDB
