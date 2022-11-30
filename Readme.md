@@ -1,1 +1,2 @@
-This a MERN STACK project
+This project was developed with MERN. 
+Styles made using Material-ui.
