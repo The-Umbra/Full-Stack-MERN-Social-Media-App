@@ -1,2 +1,2 @@
-#This project was developed with MERN.
-#Styles made using Material-ui.
+1-This project was developed with MERN.
+2-Styles made using Material-ui.
