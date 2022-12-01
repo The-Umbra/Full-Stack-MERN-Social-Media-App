@@ -7,14 +7,13 @@ import postRouters from "./routes/posts.js";
 
 const app = express();
 
-app.use("/posts", postRouters);
-
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
+app.use("/posts", postRouters);
 
 const CONNECTION_URL =
-  "mongodb+srv://<username>:<password>@cluster0.iov9vuf.mongodb.net/?retryWrites=true&w=majority";
+  "mongodb+srv://<USERNAME>:<PASSWORD>@cluster0.iov9vuf.mongodb.net/?retryWrites=true&w=majority";
 
 const PORT = process.env.PORT || 5000;
 
