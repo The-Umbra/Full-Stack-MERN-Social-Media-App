@@ -12,16 +12,13 @@ app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
 app.use("/posts", postRouters);
 
-const CONNECTION_URL =
-  "mongodb+srv://<USERNAME>:<PASSWORD>@cluster0.iov9vuf.mongodb.net/?retryWrites=true&w=majority";
+const CONNECTION_URL = "mongodb+srv://<string>:<string>@cluster0.iov9vuf.mongodb.net/?retryWrites=true&w=majority";
 
 const PORT = process.env.PORT || 5000;
 
 mongoose
   .connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() =>
-    app.listen(PORT, () => console.log(`Server Running on port: ${PORT}`))
-  )
+  .then(() => app.listen(PORT, () => console.log(`Server Running on port: ${PORT}`)))
   .catch((error) => console.log(error.message));
 
 mongoose.set("useFindAndModify", false);
